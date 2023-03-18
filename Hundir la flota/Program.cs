@@ -10,16 +10,38 @@ namespace Hundir_la_flota
     {
         static void Main(string[] args)
         {
-            //Declaro al variable de opción controlando que sea un entero y llamo al menú
+            //Llamo al menú
             MenuPrincipal();
 
         }
         static int MenuPrincipal(){
-            //Declaro una variable de opción
-            int opcion = 2;
             //Imprimo por pantalla las diferentes opciones
-            Console.WriteLine(string.Format("{0," + ((Console.WindowWidth / 2) + "Menu principal" + "}")));
-            Console.ReadLine();
+            Console.WriteLine("MENÚ PRINCIPAL");
+            Console.WriteLine("1. Un Jugador");
+            Console.WriteLine("2. Dos Jugadores");
+            Console.WriteLine("3. Cargar Partida");
+            Console.WriteLine("4. Ranking");
+            Console.WriteLine("5. Salir");
+            //Doy a elegir la opcion
+            if (int.TryParse(Console.ReadLine(), out int opcion) ){ }
+            switch(opcion)
+            {
+                case 1:
+
+                    break;
+                case 2:
+
+                    break;
+                case 3:
+
+                    break;
+                case 4:
+
+                    break;
+                case 5:
+
+                    break;
+            }
             return opcion;
         }
     }
